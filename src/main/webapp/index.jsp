@@ -19,18 +19,18 @@
     rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="dist/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="dist/assets/css/libs.bundle.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="dist/assets/css/theme.bundle.css">
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -100,7 +100,7 @@
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="login.jsp">
+                            <a class="nav-link text-body" href="login/login.jsp">
                                 Account
                             </a>
                         </li>
@@ -128,7 +128,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="dist/assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
@@ -146,7 +146,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="dist/assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
@@ -174,8 +174,8 @@
                                             <p class="m-0 fs-5 fw-bold">$422.99</p>
                                         </div>
                                     </div>
-                                    <a href="cart.jsp" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
-                                    <a href="checkout.jsp" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
+                                    <a href="checkout/cart.jsp" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
+                                    <a href="checkout/checkout.jsp" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
                                 </div>
                                 <!-- / Cart Summary-->
                               </div>
@@ -208,15 +208,15 @@
                                                   <div class="col">
                                                       <h6 class="dropdown-heading">Coats & Jackets</h6>
                                                       <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Waterproof Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Down Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Softshell Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Casual Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Windproof Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Breathable Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Cleaning & Proofing</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category.jsp">View All</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Waterproof Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Insulated Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Down Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Softshell Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Casual Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Windproof Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Breathable Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Cleaning & Proofing</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category/category.jsp">View All</a></li>
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->
@@ -225,15 +225,15 @@
                                                   <div class="col">
                                                       <h6 class="dropdown-heading">Insulated</h6>
                                                       <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Bodywarmers</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Parkas</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Baselayers & Thermals</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Winter Hats</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Scarves & Neck</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Gloves & Mitts</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Accessories</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category.jsp">View All</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Insulated Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Bodywarmers</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Parkas</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Baselayers & Thermals</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Winter Hats</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Scarves & Neck</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Gloves & Mitts</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Accessories</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category/category.jsp">View All</a></li>
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->
@@ -242,15 +242,15 @@
                                                   <div class="d-none d-xxl-block col">
                                                       <h6 class="dropdown-heading">Footwear</h6>
                                                       <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Lifestyle & Casual</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Walking Shoes</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Running Shoes</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Military Boots</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Fabric Walking Boots</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Leather Walking Boots</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Wellies</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category.jsp">Winter Footwear</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category.jsp">View All</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Lifestyle & Casual</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Walking Shoes</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Running Shoes</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Military Boots</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Fabric Walking Boots</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Leather Walking Boots</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Wellies</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item" href="category/category.jsp">Winter Footwear</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category/category.jsp">View All</a></li>
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->  
@@ -259,15 +259,15 @@
                                                   <div class="col">
                                                       <h6 class="dropdown-heading text-danger">Special Offers</h6>
                                                       <ul class="list-unstyled">
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Insulated Jackets</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Bodywarmers</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Parkas</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Baselayers & Thermals</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Winter Hats</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Scarves & Neck</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Gloves & Mitts</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category.jsp">Accessories</a></li>
-                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger dropdown-link-all" href="category.jsp">View All</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Insulated Jackets</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Bodywarmers</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Parkas</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Baselayers & Thermals</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Winter Hats</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Scarves & Neck</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Gloves & Mitts</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger" href="category/category.jsp">Accessories</a></li>
+                                                          <li class="dropdown-list-item"><a class="dropdown-item text-danger dropdown-link-all" href="category/category.jsp">View All</a></li>
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->      
@@ -275,44 +275,44 @@
                                               
                                               <div class="align-items-center justify-content-between mt-5 d-none d-lg-flex">
                                                   <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="category.jsp">
+                                                      <a class="d-block" href="category/category.jsp">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-1.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="category.jsp">
+                                                      <a class="d-block" href="category/category.jsp">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-2.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="category.jsp">
+                                                      <a class="d-block" href="category/category.jsp">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-3.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="category.jsp">
+                                                      <a class="d-block" href="category/category.jsp">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-4.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="category.jsp">
+                                                      <a class="d-block" href="category/category.jsp">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-5.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
-                                                      <a class="d-block" href="category.jsp">
+                                                      <a class="d-block" href="category/category.jsp">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-6.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
@@ -327,37 +327,37 @@
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="dist/assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
-                                                              <a class="fw-bolder link-cover" href="category.jsp">Latest Arrivals</a>
+                                                              <a class="fw-bolder link-cover" href="category/category.jsp">Latest Arrivals</a>
                                                           </div>
                                                       </div>
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-13.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="dist/assets/images/banners/banner-13.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
-                                                              <a class="fw-bolder link-cover" href="category.jsp">Accessories</a>
+                                                              <a class="fw-bolder link-cover" href="category/category.jsp">Accessories</a>
                                                           </div>
                                                       </div>
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-14.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="dist/assets/images/banners/banner-14.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
-                                                              <a class="fw-bolder link-cover" href="category.jsp">T-Shirts</a>
+                                                              <a class="fw-bolder link-cover" href="category/category.jsp">T-Shirts</a>
                                                           </div>
                                                       </div>
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-15.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="dist/assets/images/banners/banner-15.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
-                                                              <a class="fw-bolder link-cover" href="category.jsp">Jackets</a>
+                                                              <a class="fw-bolder link-cover" href="category/category.jsp">Jackets</a>
                                                           </div>
                                                       </div>
                                                   </div>
-                                                  <a href="category.jsp" class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visit Mens Section</a>
+                                                  <a href="category/category.jsp" class="btn btn-link p-0 fw-bolder text-link-border mt-5 text-dark mx-auto d-table">Visit Mens Section</a>
                                               </div>
                                           </div>
                                           <!-- Menswear Dropdown Menu Images Section-->
@@ -371,21 +371,21 @@
                                   Women
                                 </a>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="category.jsp">Tops</a></li>
-                                  <li><a class="dropdown-item" href="category.jsp">Bottoms</a></li>
-                                  <li><a class="dropdown-item" href="category.jsp">Jeans</a></li>
-                                  <li><a class="dropdown-item" href="category.jsp">T-Shirts</a></li>
-                                  <li><a class="dropdown-item" href="category.jsp">Shoes</a></li>
-                                  <li><a class="dropdown-item" href="category.jsp">Accessories</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">Tops</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">Bottoms</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">Jeans</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">T-Shirts</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">Shoes</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">Accessories</a></li>
                                 </ul>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="category.jsp" role="button">
+                                <a class="nav-link" href="category/category.jsp" role="button">
                                   Kids
                                 </a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="category.jsp" role="button">
+                                <a class="nav-link" href="category/category.jsp" role="button">
                                   Sale
                                 </a>
                               </li>
@@ -395,13 +395,13 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="./index.html">Homepage</a></li>
-                                  <li><a class="dropdown-item" href="category.jsp">Category</a></li>
-                                  <li><a class="dropdown-item" href="product.jsp">Product</a></li>
-                                  <li><a class="dropdown-item" href="cart.jsp">Cart</a></li>
-                                  <li><a class="dropdown-item" href="checkout.jsp">Checkout</a></li>
-                                  <li><a class="dropdown-item" href="login.jsp">Login</a></li>
-                                  <li><a class="dropdown-item" href="register.jsp">Register</a></li>
-                                  <li><a class="dropdown-item" href="forgotten-password.jsp">Forgotten Password</a></li>
+                                  <li><a class="dropdown-item" href="category/category.jsp">Category</a></li>
+                                  <li><a class="dropdown-item" href="product/product.jsp">Product</a></li>
+                                  <li><a class="dropdown-item" href="checkout/cart.jsp">Cart</a></li>
+                                  <li><a class="dropdown-item" href="checkout/checkout.jsp">Checkout</a></li>
+                                  <li><a class="dropdown-item" href="login/login.jsp">Login</a></li>
+                                  <li><a class="dropdown-item" href="register/register.jsp">Register</a></li>
+                                  <li><a class="dropdown-item" href="login/forgotten-password.jsp">Forgotten Password</a></li>
                                 </ul>
                               </li>
                           </ul>                    <!-- / Menu-->
@@ -449,7 +449,7 @@
                 <div class="swiper-slide position-relative h-100 w-100">
                   <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                     <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                      style=" will-change: transform; background-image: url(./assets/images/banners/banner-1.jpg)">
+                      style=" will-change: transform; background-image: url(dist/assets/images/banners/banner-1.jpg)">
                     </div>
                   </div>
                   <div
@@ -458,7 +458,7 @@
                     <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
                       <span class="text-outline-light">Summer</span> Essentials</h2>
                     <div data-swiper-parallax-y="-25">
-                      <a href="category.jsp" class="btn btn-psuedo text-white" role="button">Shop New Arrivals</a>
+                      <a href="category/category.jsp" class="btn btn-psuedo text-white" role="button">Shop New Arrivals</a>
                     </div>
                   </div>
                 </div>
@@ -468,7 +468,7 @@
                 <div class="swiper-slide position-relative h-100 w-100">
                   <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                     <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                      style=" will-change: transform; background-image: url(./assets/images/banners/banner-2.jpg)">
+                      style=" will-change: transform; background-image: url(dist/assets/images/banners/banner-2.jpg)">
                     </div>
                   </div>
                   <div
@@ -477,7 +477,7 @@
                     <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
                       Adidas <span class="text-outline-light">SS21</span></h2>
                     <div data-swiper-parallax-y="-25">
-                      <a href="category.jsp" class="btn btn-psuedo text-white" role="button">Shop Latest Adidas</a>
+                      <a href="category/category.jsp" class="btn btn-psuedo text-white" role="button">Shop Latest Adidas</a>
                     </div>
                   </div>
                 </div>
@@ -487,7 +487,7 @@
                 <div class="swiper-slide position-relative h-100 w-100">
                   <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                     <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                      style=" will-change: transform; background-image: url(./assets/images/banners/banner-4.jpg)">
+                      style=" will-change: transform; background-image: url(dist/assets/images/banners/banner-4.jpg)">
                     </div>
                   </div>
                   <div
@@ -496,7 +496,7 @@
                     <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
                       Nike <span class="text-outline-light">SS21</span></h2>
                     <div data-swiper-parallax-y="-25">
-                      <a href="category.jsp" class="btn btn-psuedo text-white" role="button">Shop Latest Nike</a>
+                      <a href="category/category.jsp" class="btn btn-psuedo text-white" role="button">Shop Latest Nike</a>
                     </div>
                   </div>
                 </div>
@@ -506,7 +506,7 @@
                 <div class="swiper-slide position-relative h-100 w-100">
                   <div class="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                     <div class="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden" data-swiper-parallax="-100"
-                      style=" will-change: transform; background-image: url(./assets/images/banners/banner-3.jpg)">
+                      style=" will-change: transform; background-image: url(dist/assets/images/banners/banner-3.jpg)">
                     </div>
                   </div>
                   <div
@@ -515,7 +515,7 @@
                     <h2 class="display-3 tracking-wide fw-bold text-uppercase tracking-wide text-white" data-swiper-parallax="100">
                       <span class="text-outline-light">Sustainable</span> Fashion</h2>
                     <div data-swiper-parallax-y="-25">
-                      <a href="category.jsp" class="btn btn-psuedo text-white" role="button">Why We Are Different</a>
+                      <a href="category/category.jsp" class="btn btn-psuedo text-white" role="button">Why We Are Different</a>
                     </div>
                   </div>
                 </div>
@@ -536,130 +536,130 @@
                     <div class="marquee-body">
                         <div class="marquee-section animation-marquee-50">
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-1.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-2.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-3.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-4.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-5.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-6.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-7.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-7.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-8.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-8.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-3 mx-lg-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-9.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-9.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                         </div>
                         <div class="marquee-section animation-marquee-50">
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-1.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-2.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-3.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-4.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-5.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-6.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-7.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-7.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-8.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-8.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
                             <div class="mx-5 f-w-24">
-                                <a class="d-block" href="category.jsp">
+                                <a class="d-block" href="category/category.jsp">
                                     <picture>
-                                        <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-9.svg" alt="">
+                                        <img class="img-fluid d-table mx-auto" src="dist/assets/images/logos/logo-9.svg" alt="">
                                     </picture>
                                 </a>
                             </div>
@@ -709,81 +709,81 @@
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="000">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-7.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-7.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Must Haves</p>
                                 <h4 class="lead fw-bold">Premium Essentials</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="100">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Curated Selection</p>
                                 <h4 class="lead fw-bold">Our Favourites</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="200">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-3.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-3.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Streetwear Basics</p>
                                 <h4 class="lead fw-bold">T-Shirts &amp; Shirts</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="300">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-4.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-4.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Waterproof &amp; Lightweight</p>
                                 <h4 class="lead fw-bold">Jackets &amp; Coats</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="400">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-5.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-5.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Keep Warm</p>
                                 <h4 class="lead fw-bold">Hats &amp; Beanies</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="500">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-6.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-6.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">20% Off</p>
                                 <h4 class="lead fw-bold">Summer Sale</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="600">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Just Arrived</p>
                                 <h4 class="lead fw-bold">Latest Kicks</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="700">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="./assets/images/categories/category-8.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                    <img class="w-100" title="" src="dist/assets/images/categories/category-8.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Accessories</p>
                                 <h4 class="lead fw-bold">Bags &amp; Rugsacks</h4>
-                                <a href="category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                       </div>
@@ -810,19 +810,19 @@
                 <div class="col-12 col-md-6 position-relative z-index-20 mb-7 mb-lg-0" data-aos="fade-right">
                     <p class="text-muted title-small">Welcome</p>
                     <h3 class="display-3 fw-bold mb-5"><span class="text-outline-dark">OldSkool</span> - streetwear & footwear specialists</h3>
-                    <p class="lead">We are OldSkool, a leading supplier of global streetwear brands, including names such as <a href="category.jsp">Stussy</a>, <a href="category.jsp">Carhartt</a>, <a href="category.jsp">Gramicci</a>, <a href="category.jsp">Afends</a> and many more.</p>
+                    <p class="lead">We are OldSkool, a leading supplier of global streetwear brands, including names such as <a href="category/category.jsp">Stussy</a>, <a href="category/category.jsp">Carhartt</a>, <a href="category/category.jsp">Gramicci</a>, <a href="category/category.jsp">Afends</a> and many more.</p>
                     <p class="lead">With worldwide shipping and unbeatable prices - now's a great time to pick out something from our range.</p>
-                    <a href="category.jsp" class="btn btn-psuedo" role="button">Shop New Arrivals</a>
+                    <a href="category/category.jsp" class="btn btn-psuedo" role="button">Shop New Arrivals</a>
                 </div>
                 <div class="col-12 col-md-6 position-relative z-index-20 pe-0" data-aos="fade-left">
                     <picture class="w-50 d-block position-relative z-index-10 border border-white border-4 shadow-lg">
-                        <img class="img-fluid" src="./assets/images/banners/banner-5.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                        <img class="img-fluid" src="dist/assets/images/banners/banner-5.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                     </picture>
                     <picture class="w-60 d-block me-8 mt-n10 shadow-lg border border-white border-4 position-relative z-index-20 ms-auto">
-                        <img class="img-fluid" src="./assets/images/banners/banner-6.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                        <img class="img-fluid" src="dist/assets/images/banners/banner-6.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                     </picture>
                     <picture class="w-50 d-block me-8 mt-n7 shadow-lg border border-white border-4 position-absolute top-0 end-0 z-index-0 ">
-                        <img class="img-fluid" src="./assets/images/banners/banner-7.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                        <img class="img-fluid" src="dist/assets/images/banners/banner-7.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                     </picture>
                 </div>
             </div>
@@ -833,13 +833,13 @@
                 <div class="row g-4">
                     <div class="col-12 col-xl-6 position-relative" data-aos="fade-right">
                         <picture class="position-relative z-index-10">
-                            <img class="w-100 rounded" src="./assets/images/banners/banner-sale.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                            <img class="w-100 rounded" src="dist/assets/images/banners/banner-sale.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                         </picture>
                         <div class="position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center z-index-20">
                             <div class="py-6 px-5 px-lg-10 text-center w-100">
                                 <h2 class="display-1 mb-3 fw-bold text-white"><span class="text-outline-light">Flash</span> Sale</h2>
                                 <p class="fs-5 fw-light text-white d-none d-md-block">Our yearly flash sale is now on! Grab yourself a bargain from the world's leading streetwear brands.</p>
-                                <a href="category.jsp" class="btn btn-psuedo text-white" role="button">Shop All Sale Items</a>
+                                <a href="category/category.jsp" class="btn btn-psuedo text-white" role="button">Shop All Sale Items</a>
                             </div>
                         </div>
                     </div>
@@ -848,44 +848,44 @@
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-8.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="dist/assets/images/banners/banner-8.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">The Jordan Delta 2</p>
-                                        <a href="category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop Kicks</a>
+                                        <a href="category/category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop Kicks</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-9.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="dist/assets/images/banners/banner-9.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Latest Mens Shirts</p>
-                                        <a href="category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop New</a>
+                                        <a href="category/category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop New</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-10.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="dist/assets/images/banners/banner-10.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">KiiKii Osake Tees</p>
-                                        <a href="category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop T-Shirts</a>
+                                        <a href="category/category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop T-Shirts</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 d-flex">
                                 <div class="card position-relative overflow-hidden">
                                     <picture class="position-relative z-index-10 d-block bg-light">
-                                        <img class="w-100 rounded" src="./assets/images/banners/banner-11.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="w-100 rounded" src="dist/assets/images/banners/banner-11.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                     <div class="card-overlay">
                                         <p class="lead fw-bolder mb-2">Multibuy Womens Shirts</p>
-                                        <a href="category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop Sale Items</a>
+                                        <a href="category/category.jsp" class="btn btn-psuedo text-white py-2" role="button">Shop Sale Items</a>
                                     </div>
                                 </div>
                             </div>
@@ -1062,10 +1062,10 @@
 
     <!-- Theme JS -->
     <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
+    <script src="dist/assets/js/vendor.bundle.js"></script>
     
     <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    <script src="dist/assets/js/theme.bundle.js"></script>
 </body>
 
 </html>

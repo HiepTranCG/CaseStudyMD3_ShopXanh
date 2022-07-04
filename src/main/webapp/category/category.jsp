@@ -18,18 +18,18 @@
     rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
   <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="../assets/css/libs.bundle.css" />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="../assets/css/theme.bundle.css" />
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -57,7 +57,7 @@
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
     
                     <!-- Logo-->
-                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="index.jsp">
+                    <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="../index.jsp">
                         <div class="d-flex align-items-center">
                             <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
                         </div>
@@ -99,7 +99,7 @@
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="login.jsp">
+                            <a class="nav-link text-body" href="../login/login.jsp">
                                 Account
                             </a>
                         </li>
@@ -127,7 +127,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="../assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
@@ -145,7 +145,7 @@
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
                                             <picture class="d-block ">
-                                                <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                <img class="img-fluid" src="../assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                             </picture>
                                         </div>
                                         <div class="col-9 offset-1">
@@ -173,8 +173,8 @@
                                             <p class="m-0 fs-5 fw-bold">$422.99</p>
                                         </div>
                                     </div>
-                                    <a href="cart.jsp" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
-                                    <a href="checkout.jsp" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
+                                    <a href="../checkout/cart.jsp" class="btn btn-outline-dark w-100 text-center mt-4" role="button">View Cart</a>
+                                    <a href="../checkout/checkout.jsp" class="btn btn-dark w-100 text-center mt-2" role="button">Proceed To Checkout</a>
                                 </div>
                                 <!-- / Cart Summary-->
                               </div>
@@ -276,42 +276,42 @@
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="./category.html">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-1.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="../assets/images/logos/logo-1.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="./category.html">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-2.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="../assets/images/logos/logo-2.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="./category.html">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-3.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="../assets/images/logos/logo-3.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="./category.html">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-4.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="../assets/images/logos/logo-4.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="./category.html">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-5.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="../assets/images/logos/logo-5.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="./category.html">
                                                           <picture>
-                                                              <img class="img-fluid d-table mx-auto" src="./assets/images/logos/logo-6.svg" alt="">
+                                                              <img class="img-fluid d-table mx-auto" src="../assets/images/logos/logo-6.svg" alt="">
                                                           </picture>
                                                       </a>
                                                   </div>
@@ -326,7 +326,7 @@
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="../assets/images/banners/banner-12.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
                                                               <a class="fw-bolder link-cover" href="./category.html">Latest Arrivals</a>
                                                           </div>
@@ -334,7 +334,7 @@
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-13.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="../assets/images/banners/banner-13.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
                                                               <a class="fw-bolder link-cover" href="./category.html">Accessories</a>
                                                           </div>
@@ -342,7 +342,7 @@
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-14.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="../assets/images/banners/banner-14.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
                                                               <a class="fw-bolder link-cover" href="./category.html">T-Shirts</a>
                                                           </div>
@@ -350,7 +350,7 @@
                                                       <div class="col-12 col-md-6">
                                                           <div class="card justify-content-center d-flex align-items-center bg-transparent">
                                                               <picture class="w-100 d-block mb-2 mx-auto">
-                                                                  <img class="w-100 rounded" title="" src="./assets/images/banners/banner-15.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                                                  <img class="w-100 rounded" title="" src="../assets/images/banners/banner-15.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                                               </picture>
                                                               <a class="fw-bolder link-cover" href="./category.html">Jackets</a>
                                                           </div>
@@ -393,14 +393,14 @@
                                   Pages
                                 </a>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="index.jsp">Homepage</a></li>
+                                  <li><a class="dropdown-item" href="../index.jsp">Homepage</a></li>
                                   <li><a class="dropdown-item" href="./category.html">Category</a></li>
-                                  <li><a class="dropdown-item" href="product.jsp">Product</a></li>
-                                  <li><a class="dropdown-item" href="cart.jsp">Cart</a></li>
-                                  <li><a class="dropdown-item" href="checkout.jsp">Checkout</a></li>
-                                  <li><a class="dropdown-item" href="login.jsp">Login</a></li>
-                                  <li><a class="dropdown-item" href="register.jsp">Register</a></li>
-                                  <li><a class="dropdown-item" href="forgotten-password.jsp">Forgotten Password</a></li>
+                                  <li><a class="dropdown-item" href="../product/product.jsp">Product</a></li>
+                                  <li><a class="dropdown-item" href="../checkout/cart.jsp">Cart</a></li>
+                                  <li><a class="dropdown-item" href="../checkout/checkout.jsp">Checkout</a></li>
+                                  <li><a class="dropdown-item" href="../login/login.jsp">Login</a></li>
+                                  <li><a class="dropdown-item" href="../register/register.jsp">Register</a></li>
+                                  <li><a class="dropdown-item" href="../login/forgotten-password.jsp">Forgotten Password</a></li>
                                 </ul>
                               </li>
                           </ul>                    <!-- / Menu-->
@@ -420,7 +420,7 @@
         
         <!-- Category Top Banner -->
         <div class="py-10 bg-img-cover bg-overlay-dark position-relative overflow-hidden bg-pos-center-center rounded-0"
-            style="background-image: url(./assets/images/banners/banner-category-top.jpg);">
+            style="background-image: url(../assets/images/banners/banner-category-top.jpg);">
             <div class="container-fluid position-relative z-index-20" data-aos="fade-right" data-aos-delay="300">
                 <h1 class="fw-bold display-6 mb-4 text-white">Latest Arrivals</h1>
                 <div class="col-12 col-md-6">
@@ -475,14 +475,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-1.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-1.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Air VaporMax 2021</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Air VaporMax 2021</a>
                                 <small class="text-muted d-block">4 colours, 10 sizes</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
                             </div>
@@ -498,14 +498,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-2.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-2.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike ZoomX Vaporfly</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike ZoomX Vaporfly</a>
                                 <small class="text-muted d-block">2 colours, 4 sizes</small>
                                         <p class="mt-2 mb-0 small">$275.45</p>
                             </div>
@@ -521,11 +521,11 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-3.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-3.jpg" alt="">
                                 </picture>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Blazer Mid &#x27;77</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Blazer Mid &#x27;77</a>
                                 <small class="text-muted d-block">5 colours, 6 sizes</small>
                                     <p class="mt-2 mb-0 small text-muted">Sold Out</p>
                             </div>
@@ -540,14 +540,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-4.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-4.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Air Force 1</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Air Force 1</a>
                                 <small class="text-muted d-block">6 colours, 9 sizes</small>
                                         <p class="mt-2 mb-0 small">$425.85</p>
                             </div>
@@ -563,14 +563,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-5.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-5.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Air Max 90</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Air Max 90</a>
                                 <small class="text-muted d-block">4 colours, 10 sizes</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$196.99</s> <span class="text-danger">$98.66</span></p>
                             </div>
@@ -587,14 +587,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-6.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-6.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Glide FlyEase</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Glide FlyEase</a>
                                 <small class="text-muted d-block">1 colour</small>
                                         <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">$198.66</span></p>
                             </div>
@@ -609,14 +609,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-7.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-7.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Zoom Freak</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Zoom Freak</a>
                                 <small class="text-muted d-block">2 colours, 2 sizes</small>
                                         <p class="mt-2 mb-0 small">$444.99</p>
                             </div>
@@ -632,14 +632,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-8.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-8.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Air Pegasus</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Air Pegasus</a>
                                 <small class="text-muted d-block">3 colours, 10 sizes</small>
                                         <p class="mt-2 mb-0 small">$178.99</p>
                             </div>
@@ -655,14 +655,14 @@
                                 </div>
                                 <span class="position-absolute top-0 end-0 p-2 z-index-20 text-muted"><i class="ri-heart-line"></i></span>
                                 <picture class="position-relative overflow-hidden d-block bg-light">
-                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="./assets/images/products/product-1.jpg" alt="">
+                                    <img class="w-100 img-fluid position-relative z-index-10" title="" src="../assets/images/products/product-1.jpg" alt="">
                                 </picture>
                                     <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
                                         <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
                                     </div>
                             </div>
                             <div class="card-body px-0">
-                                <a class="text-decoration-none link-cover" href="product.jsp">Nike Air Jordans</a>
+                                <a class="text-decoration-none link-cover" href="../product/product.jsp">Nike Air Jordans</a>
                                 <small class="text-muted d-block">3 colours, 10 sizes</small>
                                         <p class="mt-2 mb-0 small">$154.99</p>
                             </div>
@@ -922,10 +922,10 @@
     </div>
     <!-- Theme JS -->
     <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
+    <script src="../assets/js/vendor.bundle.js"></script>
     
     <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    <script src="../assets/js/theme.bundle.js"></script>
 </body>
 
 </html>

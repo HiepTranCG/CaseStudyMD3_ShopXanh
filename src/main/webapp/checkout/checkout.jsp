@@ -19,18 +19,18 @@
     rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
   <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+  <link rel="stylesheet" href="../assets/css/libs.bundle.css" />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+  <link rel="stylesheet" href="../assets/css/theme.bundle.css" />
 
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
@@ -58,7 +58,7 @@
                 <div class="col-lg-7 pt-5 pt-lg-10">
                     <div class="pe-lg-5">
                         <!-- Logo-->
-                        <a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="index.jsp">
+                        <a class="navbar-brand fw-bold fs-3 flex-shrink-0 mx-0 px-0" href="../index.jsp">
                                 <div class="d-flex align-items-center">
                                     <svg class="f-w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.53 72.26"><path d="M10.43,54.2h0L0,36.13,10.43,18.06,20.86,0H41.72L10.43,54.2Zm67.1-7.83L73,54.2,68.49,62,45,48.47,31.29,72.26H20.86l-5.22-9L52.15,0H62.58l5.21,9L54.06,32.82,77.53,46.37Z" fill="currentColor" fill-rule="evenodd"/></svg>
                                 </div>
@@ -79,7 +79,7 @@
                             <!-- Checkout Panel Information-->
                             <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-4">
                               <h3 class="fs-5 fw-bolder m-0 lh-1">Contact Information</h3>
-                              <small class="text-muted fw-bolder">Already registered? <a href="login.jsp">Login</a></small>
+                              <small class="text-muted fw-bolder">Already registered? <a href="../login/login.jsp">Login</a></small>
                             </div>
                             <div class="row">
                               <!-- First Name-->
@@ -252,7 +252,7 @@
                                 <div class="col-2 position-relative">
                                         <span class="checkout-item-qty">3</span>
                                     <picture class="d-block border">
-                                        <img class="img-fluid" src="./assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="img-fluid" src="../assets/images/products/product-cart-1.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                 </div>
                                 <div class="col-9 offset-1">
@@ -271,7 +271,7 @@
                                 <div class="col-2 position-relative">
                                         <span class="checkout-item-qty">3</span>
                                     <picture class="d-block border">
-                                        <img class="img-fluid" src="./assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+                                        <img class="img-fluid" src="../assets/images/products/product-cart-2.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
                                     </picture>
                                 </div>
                                 <div class="col-9 offset-1">
@@ -322,10 +322,10 @@
 
     <!-- Theme JS -->
     <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
+    <script src="../assets/js/vendor.bundle.js"></script>
     
     <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    <script src="../assets/js/theme.bundle.js"></script>
 </body>
 
 </html>
