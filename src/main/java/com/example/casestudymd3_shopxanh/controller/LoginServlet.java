@@ -1,11 +1,8 @@
 package com.example.casestudymd3_shopxanh.controller;
 
 import com.example.casestudymd3_shopxanh.model.Account;
-import com.example.casestudymd3_shopxanh.model.Product;
 import com.example.casestudymd3_shopxanh.service.IAccountService;
-import com.example.casestudymd3_shopxanh.service.IProductService;
 import com.example.casestudymd3_shopxanh.service.impl.AccountServiceImpl;
-import com.example.casestudymd3_shopxanh.service.impl.ProductServiceImpl;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
