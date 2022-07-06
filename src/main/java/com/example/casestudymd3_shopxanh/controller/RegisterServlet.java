@@ -61,7 +61,7 @@ public class RegisterServlet extends HttpServlet {
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, SQLException, ServletException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        if (password == null){
+        if (password == null) {
 
         }
         String name = request.getParameter("name");

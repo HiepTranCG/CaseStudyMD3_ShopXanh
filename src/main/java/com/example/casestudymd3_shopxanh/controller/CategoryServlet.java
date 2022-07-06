@@ -17,7 +17,6 @@ import java.util.List;
 @WebServlet(name = "CategoryServlet", value = "/categories")
 public class CategoryServlet extends HttpServlet {
     IProductService productService = new ProductServiceImpl();
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -28,13 +27,13 @@ public class CategoryServlet extends HttpServlet {
         }
         switch (action) {
             case "search":
-                searchBook(request, response);
+                searchCategory(request, response);
                 break;
             default:
-                showListBook(request, response);
+                showListCategory(request, response);
         }
     }
-    private void searchBook(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private void searchCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("category/category.jsp");
         String name = request.getParameter("name");
         List<Product> products = productService.findByName(name);
@@ -42,7 +41,7 @@ public class CategoryServlet extends HttpServlet {
         requestDispatcher.forward(request, response);
     }
 
-    private void showListBook(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private void showListCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("category/category.jsp");
         List<Product> products = productService.findAll();
         request.setAttribute("products", products);

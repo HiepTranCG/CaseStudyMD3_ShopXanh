@@ -75,7 +75,7 @@ public class ProductServiceImpl implements IProductService {
                 Double price = rs.getDouble("price");
                 String description = rs.getString("description");
                 String image = rs.getString("image");
-                Long category = rs.getLong("category");
+                Long category = rs.getLong("categoryId");
                 productList.add(new Product(idFind, name, price, description, image, category));
             }
         } catch (SQLException e) {
