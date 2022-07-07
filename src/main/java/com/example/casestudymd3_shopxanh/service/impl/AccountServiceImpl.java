@@ -137,9 +137,11 @@ public class AccountServiceImpl implements IAccountService {
     public Account findByUserNamePassword(String username,String password) {
         Account account = null;
         try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("select * from account where username like ? and password like ?");) {
+             PreparedStatement preparedStatement = connection.prepareStatement("select * from account where (username like ? and password like ?) or (email like ? and  password like ?)");) {
             preparedStatement.setString(1, username);
             preparedStatement.setString(2,password);
+            preparedStatement.setString(3, username);
+            preparedStatement.setString(4,password);
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
