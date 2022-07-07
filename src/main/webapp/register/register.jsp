@@ -71,26 +71,32 @@
                 <a href="#" class="btn btn-twitter d-block mb-2"><i class="ri-twitter-fill align-bottom"></i> Login with
                     Twitter</a>
                 <span class="text-muted text-center d-block fw-bolder my-4">OR</span>
-                <form>
+                <form method="post">
+                    <input type="hidden" name="action" value="create">
                     <div class="form-group">
-                      <label class="form-label" for="register-fname">First name</label>
-                      <input type="text" class="form-control" id="register-fname" placeholder="Enter your first name">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="register-lname">Last name</label>
-                      <input type="text" class="form-control" id="register-lname" placeholder="Enter your last name">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="register-email">Email address</label>
-                      <input type="email" class="form-control" id="register-email" placeholder="name@email.com">
+                      <label class="form-label" for="register-username">Username</label>
+                      <input type="text" class="form-control" id="register-username" name="register-username" placeholder="Enter your username" required pattern="^\w+$">
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="register-password">Password</label>
-                      <input type="password" class="form-control" id="register-password" placeholder="Enter your password">
+                      <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Enter your password" required pattern="^\w+$">
                     </div>
+                    <div class="form-group">
+                      <label class="form-label" for="register-name">Name</label>
+                      <input type="text" class="form-control" id="register-name" name="register-name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="register-phone">Phone</label>
+                      <input type="text" class="form-control" id="register-phone" name="register-phone" placeholder="Enter your phone" pattern="^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$" title="Nhập không đúng định dạng">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-password">Email</label>
+                        <input type="email" class="form-control" id="register-email" name="register-email" placeholder="name@email.com">
+                    </div>
+                    <span style="color: red" class="text-center" >${mess}</span>
                     <button type="submit" class="btn btn-dark d-block w-100 my-4">Sign Up</button>
                   </form>
-                  <p class="d-block text-center text-muted">Already registered? <a class="text-muted" href="../login/login.jsp">Login here.</a></p>
+                  <p class="d-block text-center text-muted">Already registered? <a class="text-muted" href="logins">Login here.</a></p>
             </div>
 
         </div>

@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "CategoryServlet", value = "/categories")
-public class CategoryServlet extends HttpServlet {
+@WebServlet(name = "CheckoutServlet", value = "/checkout")
+public class CheckoutServlet extends HttpServlet {
     IProductService productService = new ProductServiceImpl();
     ICategoryService categoryService = new CategoryServiceImpl();
     @Override

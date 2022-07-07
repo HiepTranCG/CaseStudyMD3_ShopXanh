@@ -41,14 +41,14 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public Account findById(Long id) throws SQLException {
+    public Account findById(int id) throws SQLException {
         Account account = null ;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("select * from account where id = ?");){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 String name = rs.getString("name");
@@ -71,7 +71,7 @@ public class AccountServiceImpl implements IAccountService {
              PreparedStatement preparedStatement = connection.prepareStatement("select * from account");) {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 String name = rs.getString("name");
@@ -93,7 +93,7 @@ public class AccountServiceImpl implements IAccountService {
             preparedStatement.setString(1, "%" + findName + "%");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 String name = rs.getString("name");
@@ -108,10 +108,10 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public boolean delete(Long id) throws SQLException {
+    public boolean delete(int id) throws SQLException {
         boolean rowDeleted;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("delete from account where id = ?")){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             rowDeleted = preparedStatement.executeUpdate() > 0;
         }
         return rowDeleted;
@@ -119,7 +119,7 @@ public class AccountServiceImpl implements IAccountService {
 
     @Override
     public boolean update(Account account) throws SQLException {
-        Long findId = account.getId();
+        int findId = account.getId();
         boolean rowUpdate;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("update account set account.username = ?, account.password = ?, account.name = ?, account.phone = ?, account.email = ?, role = ? where id = ?")){
             preparedStatement.setString(1, account.getUsername());
@@ -128,7 +128,7 @@ public class AccountServiceImpl implements IAccountService {
             preparedStatement.setString(4, account.getPhone());
             preparedStatement.setString(5, account.getEmail());
             preparedStatement.setInt(6, account.getRole());
-            preparedStatement.setLong(7, findId);
+            preparedStatement.setInt(7, findId);
             rowUpdate = preparedStatement.executeUpdate() > 0;
         }
         return rowUpdate;
@@ -143,7 +143,7 @@ public class AccountServiceImpl implements IAccountService {
             System.out.println(preparedStatement);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long id = rs.getLong("id");
+                int id = rs.getInt("id");
                 String usr = rs.getString("username");
                 String pw = rs.getString("password");
                 String name = rs.getString("name");
@@ -155,5 +155,21 @@ public class AccountServiceImpl implements IAccountService {
         } catch (SQLException e) {
         }
         return account;
+    }
+
+    public boolean findByUsernameAndEmail(String username,String email) {
+        boolean find = false;
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("select * from account where username like ? or email like ?");) {
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, email);
+            System.out.println(preparedStatement);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                find = true;
+            }
+        } catch (SQLException e) {
+        }
+        return find;
     }
 }

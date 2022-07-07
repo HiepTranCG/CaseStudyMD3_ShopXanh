@@ -28,7 +28,7 @@ public class OrderServiceImpl implements IOrderService {
     public void add(Orderr orderr) throws SQLException {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("insert into orderr(accountId, createDate, status) values(?, ?, ?)");) {
-            preparedStatement.setLong(1, orderr.getAccountId());
+            preparedStatement.setInt(1, orderr.getAccountId());
             preparedStatement.setDate(2, orderr.getCreateDate());
             preparedStatement.setInt(3, orderr.getStatus());
             System.out.println(preparedStatement);
@@ -39,15 +39,15 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     @Override
-    public Orderr findById(Long id) throws SQLException {
+    public Orderr findById(int id) throws SQLException {
         Orderr orderr = null ;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("select * from orderr where id = ?");){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
-                Long accountId = rs.getLong("accountId");
+                int idFind = rs.getInt("id");
+                int accountId = rs.getInt("accountId");
                 Date createDate = rs.getDate("createDate");
                 int status = rs.getInt("status");
                 orderr = new Orderr(idFind, accountId,createDate, status);
@@ -66,8 +66,8 @@ public class OrderServiceImpl implements IOrderService {
              PreparedStatement preparedStatement = connection.prepareStatement("select * from orderr");) {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
-                Long accountId = rs.getLong("accountId");
+                int idFind = rs.getInt("id");
+                int accountId = rs.getInt("accountId");
                 Date createDate = rs.getDate("createDate");
                 int status = rs.getInt("status");
                 orderrList.add(new Orderr(idFind, accountId,createDate, status));
@@ -85,8 +85,8 @@ public class OrderServiceImpl implements IOrderService {
             preparedStatement.setString(1, "%" + findName + "%");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
-                Long accountId = rs.getLong("accountId");
+                int idFind = rs.getInt("id");
+                int accountId = rs.getInt("accountId");
                 Date createDate = rs.getDate("createDate");
                 int status = rs.getInt("status");
                 orderrList.add(new Orderr(idFind, accountId,createDate, status));
@@ -97,10 +97,10 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     @Override
-    public boolean delete(Long id) throws SQLException {
+    public boolean delete(int id) throws SQLException {
         boolean rowDeleted;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("delete from orderr where id = ?")){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             rowDeleted = preparedStatement.executeUpdate() > 0;
         }
         return rowDeleted;
@@ -108,13 +108,13 @@ public class OrderServiceImpl implements IOrderService {
 
     @Override
     public boolean update(Orderr orderr) throws SQLException {
-        Long findId = orderr.getId();
+        int findId = orderr.getId();
         boolean rowUpdate;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("update orderr set orderr.accountId = ?, orderr.createDate = ?, orderr.status = ? where id = ?")){
-            preparedStatement.setLong(1, orderr.getAccountId());
+            preparedStatement.setInt(1, orderr.getAccountId());
             preparedStatement.setDate(2, orderr.getCreateDate());
             preparedStatement.setInt(3, orderr.getStatus());
-            preparedStatement.setLong(4, findId);
+            preparedStatement.setInt(4, findId);
             rowUpdate = preparedStatement.executeUpdate() > 0;
         }
         return rowUpdate;

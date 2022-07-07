@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
+
 @WebServlet(name = "RegisterServlet", urlPatterns = "/registers")
 public class RegisterServlet extends HttpServlet {
     IAccountService accountService = new AccountServiceImpl();
@@ -59,21 +60,17 @@ public class RegisterServlet extends HttpServlet {
     }
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException, SQLException, ServletException {
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        if (password == null) {
-
-        }
-        String name = request.getParameter("name");
-        String phone = request.getParameter("phone");
-        String email = request.getParameter("email");
-        int roleId = Integer.parseInt(request.getParameter("roleId"));
-        boolean status = Boolean.parseBoolean(request.getParameter("status"));
-        if (accountService.findByName(username) == null) {
+        String username = request.getParameter("register-username");
+        String password = request.getParameter("register-password");
+        String name = request.getParameter("register-name");
+        String phone = request.getParameter("register-phone");
+        String email = request.getParameter("register-email");
+        int roleId = 1;
+        if (accountService.findByUsernameAndEmail(username, email) == false) {
             accountService.add(new Account(username, password, name, phone, email, roleId));
             response.sendRedirect("/logins");
         } else {
-            request.setAttribute("mess", "Tài khoản đã tồn tại");
+            request.setAttribute("mess", "Account already exits!");
             request.getRequestDispatcher("register/register.jsp").forward(request,response);
         }
     }

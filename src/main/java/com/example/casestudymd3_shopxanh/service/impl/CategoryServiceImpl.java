@@ -2,6 +2,7 @@ package com.example.casestudymd3_shopxanh.service.impl;
 
 import com.example.casestudymd3_shopxanh.model.Account;
 import com.example.casestudymd3_shopxanh.model.Category;
+import com.example.casestudymd3_shopxanh.model.Product;
 import com.example.casestudymd3_shopxanh.service.ICategoryService;
 
 import java.sql.*;
@@ -37,14 +38,14 @@ public class CategoryServiceImpl implements ICategoryService {
     }
 
     @Override
-    public Category findById(Long id) throws SQLException {
+    public Category findById(int id) throws SQLException {
         Category category = null ;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("select * from category where id = ?");){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String name = rs.getString("name");
                 category = new Category(idFind, name);
             }
@@ -62,7 +63,7 @@ public class CategoryServiceImpl implements ICategoryService {
              PreparedStatement preparedStatement = connection.prepareStatement("select * from category");) {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String name = rs.getString("name");
                 categoryList.add(new Category(idFind, name));
             }
@@ -79,7 +80,7 @@ public class CategoryServiceImpl implements ICategoryService {
             preparedStatement.setString(1, "%" + findName + "%");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String name = rs.getString("name");
                 categoryList.add(new Category(idFind, name));
             }
@@ -89,10 +90,10 @@ public class CategoryServiceImpl implements ICategoryService {
     }
 
     @Override
-    public boolean delete(Long id) throws SQLException {
+    public boolean delete(int id) throws SQLException {
         boolean rowDeleted;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("delete from category where id = ?")){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             rowDeleted = preparedStatement.executeUpdate() > 0;
         }
         return rowDeleted;
@@ -100,13 +101,29 @@ public class CategoryServiceImpl implements ICategoryService {
 
     @Override
     public boolean update(Category category) throws SQLException {
-        Long findId = category.getId();
+        int findId = category.getId();
         boolean rowUpdate;
-        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("update category set category.name = ? where id = ?")){
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("update category set category.name = ? where id = ?")) {
             preparedStatement.setString(1, category.getName());
-            preparedStatement.setLong(2, findId);
+            preparedStatement.setInt(2, findId);
             rowUpdate = preparedStatement.executeUpdate() > 0;
         }
         return rowUpdate;
+    }
+
+    @Override
+    public Category getCategory(int id) {
+        Category category = new Category();
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("select name from category where id = ?");) {
+            preparedStatement.setInt(1, id);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                String name = rs.getString("name");
+                category = new Category(id, name);
+            }
+        } catch (SQLException e) {
+        }
+        return category;
     }
 }

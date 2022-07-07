@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(name = "ProductServlet", value = "/products")
@@ -28,13 +29,17 @@ public class ProductServlet extends HttpServlet {
         }
         switch (action) {
             case "search":
-                searchBook(request, response);
+                searchProduct(request, response);
                 break;
             default:
-                showListBook(request, response);
+                try {
+                    showListProduct(request, response);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
         }
     }
-    private void searchBook(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private void searchProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("product/product.jsp");
         String name = request.getParameter("name");
         List<Product> products = productService.findByName(name);
@@ -42,10 +47,13 @@ public class ProductServlet extends HttpServlet {
         requestDispatcher.forward(request, response);
     }
 
-    private void showListBook(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private void showListProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("product/product.jsp");
-        List<Product> products = productService.findAll();
-        request.setAttribute("products", products);
+        int id = Integer.parseInt(request.getParameter("id"));
+        Product product = productService.findById(id);
+        List<Product> productList = productService.findAll();
+        request.setAttribute("product", product);
+        request.setAttribute("productList", productList);
         requestDispatcher.forward(request, response);
     }
 

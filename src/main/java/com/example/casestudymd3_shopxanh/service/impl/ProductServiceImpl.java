@@ -32,7 +32,7 @@ public class ProductServiceImpl implements IProductService {
             preparedStatement.setDouble(2, product.getPrice());
             preparedStatement.setString(3, product.getDescription());
             preparedStatement.setString(4, product.getImage());
-            preparedStatement.setLong(5, product.getCategoryId());
+            preparedStatement.setInt(5, product.getCategoryId());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -41,20 +41,19 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public Product findById(Long id) throws SQLException {
+    public Product findById(int id) throws SQLException {
         Product product = null ;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("select * from product where id = ?");){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
                 String name = rs.getString("name");
                 Double price = rs.getDouble("price");
                 String description = rs.getString("description");
                 String image = rs.getString("image");
-                Long category = rs.getLong("category");
-                product = new Product(idFind, name, price, description, image, category);
+                int categoryId = rs.getInt("categoryId");
+                product = new Product(id, name, price, description, image, categoryId);
             }
         }
         catch (SQLException e) {
@@ -70,12 +69,12 @@ public class ProductServiceImpl implements IProductService {
              PreparedStatement preparedStatement = connection.prepareStatement("select * from product");) {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String name = rs.getString("name");
                 Double price = rs.getDouble("price");
                 String description = rs.getString("description");
                 String image = rs.getString("image");
-                Long category = rs.getLong("categoryId");
+                int category = rs.getInt("categoryId");
                 productList.add(new Product(idFind, name, price, description, image, category));
             }
         } catch (SQLException e) {
@@ -91,12 +90,12 @@ public class ProductServiceImpl implements IProductService {
             preparedStatement.setString(1, "%" + findName + "%");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
+                int idFind = rs.getInt("id");
                 String name = rs.getString("name");
                 Double price = rs.getDouble("price");
                 String description = rs.getString("description");
                 String image = rs.getString("image");
-                Long category = rs.getLong("category");
+                int category = rs.getInt("category");
                 productList.add(new Product(idFind, name, price, description, image, category));
             }
         } catch (SQLException e) {
@@ -105,10 +104,10 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public boolean delete(Long id) throws SQLException {
+    public boolean delete(int id) throws SQLException {
         boolean rowDeleted;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("delete from product where id = ?")){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             rowDeleted = preparedStatement.executeUpdate() > 0;
         }
         return rowDeleted;
@@ -116,17 +115,38 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public boolean update(Product product) throws SQLException {
-        Long findId = product.getId();
+        int findId = product.getId();
         boolean rowUpdate;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("update product set product.name = ?, product.price = ?, product.description = ?, product.image = ?, product.categoryId = ? where id = ?")){
             preparedStatement.setString(1, product.getName());
             preparedStatement.setDouble(2, product.getPrice());
             preparedStatement.setString(3, product.getDescription());
             preparedStatement.setString(4, product.getImage());
-            preparedStatement.setLong(5, product.getCategoryId());
-            preparedStatement.setLong(6, findId);
+            preparedStatement.setInt(5, product.getCategoryId());
+            preparedStatement.setInt(6, findId);
             rowUpdate = preparedStatement.executeUpdate() > 0;
         }
         return rowUpdate;
+    }
+
+    @Override
+    public List<Product> findByCategoryId(int categoryId) {
+        List<Product> productList = new ArrayList<>();
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("select * from product where categoryId = ?");) {
+            preparedStatement.setInt(1, categoryId);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                int idFind = rs.getInt("id");
+                String name = rs.getString("name");
+                Double price = rs.getDouble("price");
+                String description = rs.getString("description");
+                String image = rs.getString("image");
+                int category = rs.getInt("categoryId");
+                productList.add(new Product(idFind, name, price, description, image, category));
+            }
+        } catch (SQLException e) {
+        }
+        return productList;
     }
 }

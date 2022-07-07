@@ -71,21 +71,23 @@
                 <a href="#" class="btn btn-twitter d-block mb-2"><i class="ri-twitter-fill align-bottom"></i> Login with
                     Twitter</a>
                 <span class="text-muted text-center d-block fw-bolder my-4">OR</span>
-                <form>
+                <form method="post">
+                    <input type="hidden" name="action" value="login">
                     <div class="form-group">
-                      <label class="form-label" for="login-email">Email address</label>
-                      <input type="email" class="form-control" id="login-email" placeholder="name@email.com">
+                      <label class="form-label" for="login-username">Username/Email</label>
+                      <input type="text" class="form-control" id="login-username" name="login-username" placeholder="Enter your username">
                     </div>
                     <div class="form-group">
                       <label for="login-password" class="form-label d-flex justify-content-between align-items-center">
                         Password
                         <a href="forgotten-password.jsp" class="text-muted small">Forgot your password?</a>
                       </label>
-                      <input type="password" class="form-control" id="login-password" placeholder="Enter your password">
+                      <input type="password" class="form-control" id="login-password" name="login-password" placeholder="Enter your password">
                     </div>
+                    <span style="color: red" class="text-center" >${mess}</span>
                     <button type="submit" class="btn btn-dark d-block w-100 my-4">Login</button>
                 </form>
-                <p class="d-block text-center text-muted">New customer? <a class="text-muted" href="../register/register.jsp">Sign up for an account</a></p>
+                <p class="d-block text-center text-muted">New customer? <a class="text-muted" href="/registers">Sign up for an account</a></p>
             </div>
 
         </div>

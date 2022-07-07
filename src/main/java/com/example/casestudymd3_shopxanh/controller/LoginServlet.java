@@ -18,7 +18,7 @@ import java.util.*;
 @WebServlet(name = "LoginServlet", value = "/logins")
 public class LoginServlet extends HttpServlet {
     IAccountService accountService = new AccountServiceImpl();
-    static Long currentId = 0L;
+    static int currentId = 0;
     static String name ="";
 
     @Override
@@ -106,13 +106,15 @@ public class LoginServlet extends HttpServlet {
     }
 
     private void login(HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IOException, ServletException {
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        String username = request.getParameter("login-username");
+        String password = request.getParameter("login-password");
         Account account = accountService.findByUserNamePassword(username, password);
         if(account == null){
-            request.setAttribute("mess", "Nhập sai tài khoản hoặc mật khẩu");
+            request.setAttribute("mess", "Wrong account or password!");
             request.getRequestDispatcher("login/login.jsp").forward(request,response);
         } else {
+            session.setAttribute("username", account.getUsername());
+            session.setAttribute("password", account.getPassword());
             session.setAttribute("phone", account.getPhone());
             session.setAttribute("name" , account.getName());
             session.setAttribute("roleId", account.getRole());

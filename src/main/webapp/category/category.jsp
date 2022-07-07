@@ -438,11 +438,11 @@
             <div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Sneakers</a></li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">${category.name}</a></li>
                         <li class="breadcrumb-item active" aria-current="page">New Releases</li>
                     </ol>
-                </nav>        <h1 class="fw-bold fs-3 mb-2">New Releases (121)</h1>
+                </nav>        <h1 class="fw-bold fs-3 mb-2">New Releases (${products.size()})</h1>
                 <p class="m-0 text-muted small">Showing 1 - 9 of 121</p>
             </div>
             <div class="d-flex justify-content-end align-items-center mt-4 mt-lg-0 flex-column flex-md-row">
@@ -483,7 +483,7 @@
                             </div>
                         </div>
                         <div class="card-body px-0">
-                            <a class="text-decoration-none link-cover" href="../product/product.jsp">${product.name}</a>
+                            <a class="text-decoration-none link-cover" href="/products?id=${product.id}">${product.name}</a>
                             <small class="text-muted d-block">${product.description}</small>
                             <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">${product.price}</span></p>
                         </div>
@@ -701,7 +701,7 @@
 
         <!-- Pagination-->
         <div class="d-flex flex-column f-w-44 mx-auto my-5 text-center">
-            <small class="text-muted">Showing 9 of 121 products</small>
+            <small class="text-muted">Showing ${products.size()} of 100 products</small>
             <div class="progress f-h-1 mt-3">
                 <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>

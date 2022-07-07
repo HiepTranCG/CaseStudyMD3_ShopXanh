@@ -100,7 +100,7 @@
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="login/login.jsp">
+                            <a class="nav-link text-body" href="/logins">
                                 Account
                             </a>
                         </li>
@@ -399,8 +399,8 @@
                                   <li><a class="dropdown-item" href="product/product.jsp">Product</a></li>
                                   <li><a class="dropdown-item" href="checkout/cart.jsp">Cart</a></li>
                                   <li><a class="dropdown-item" href="checkout/checkout.jsp">Checkout</a></li>
-                                  <li><a class="dropdown-item" href="login/login.jsp">Login</a></li>
-                                  <li><a class="dropdown-item" href="register/register.jsp">Register</a></li>
+                                  <li><a class="dropdown-item" href="/logins">Login</a></li>
+                                  <li><a class="dropdown-item" href="/registers">Register</a></li>
                                   <li><a class="dropdown-item" href="login/forgotten-password.jsp">Forgotten Password</a></li>
                                 </ul>
                               </li>
@@ -713,7 +713,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Must Haves</p>
                                 <h4 class="lead fw-bold">Premium Essentials</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=1" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -723,7 +723,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Curated Selection</p>
                                 <h4 class="lead fw-bold">Our Favourites</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=2" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -733,7 +733,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Streetwear Basics</p>
                                 <h4 class="lead fw-bold">T-Shirts &amp; Shirts</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=3" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -743,7 +743,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Waterproof &amp; Lightweight</p>
                                 <h4 class="lead fw-bold">Jackets &amp; Coats</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=4" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -753,7 +753,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Keep Warm</p>
                                 <h4 class="lead fw-bold">Hats &amp; Beanies</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=5" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -763,7 +763,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">20% Off</p>
                                 <h4 class="lead fw-bold">Summer Sale</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=6" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -773,7 +773,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Just Arrived</p>
                                 <h4 class="lead fw-bold">Latest Kicks</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=7" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                           <div class="swiper-slide align-self-stretch bg-transparent h-auto">
@@ -783,7 +783,7 @@
                                 </picture>
                                 <p class="title-small mb-2 text-muted">Accessories</p>
                                 <h4 class="lead fw-bold">Bags &amp; Rugsacks</h4>
-                                <a href="category/category.jsp" class="btn btn-psuedo align-self-start">Shop Now</a>
+                                <a href="/categories?id=8" class="btn btn-psuedo align-self-start">Shop Now</a>
                             </div>
                           </div>
                       </div>

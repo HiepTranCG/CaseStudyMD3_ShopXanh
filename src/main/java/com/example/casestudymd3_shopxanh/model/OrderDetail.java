@@ -1,13 +1,13 @@
 package com.example.casestudymd3_shopxanh.model;
 
 public class OrderDetail {
-    private Long id;
-    private Long productId;
-    private Long orderId;
-    private Long amount;
+    private int id;
+    private int productId;
+    private int orderId;
+    private int amount;
     private Double price;
 
-    public OrderDetail(Long productId, Long orderId, Long amount, Double price) {
+    public OrderDetail(int productId, int orderId, int amount, Double price) {
         this.productId = productId;
         this.orderId = orderId;
         this.amount = amount;
@@ -17,7 +17,7 @@ public class OrderDetail {
     public OrderDetail() {
     }
 
-    public OrderDetail(Long id, Long productId, Long orderId, Long amount, Double price) {
+    public OrderDetail(int id, int productId, int orderId, int amount, Double price) {
         this.id = id;
         this.productId = productId;
         this.orderId = orderId;
@@ -25,35 +25,35 @@ public class OrderDetail {
         this.price = price;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(Long productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
-    public Long getOrderId() {
+    public int getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(Long orderId) {
+    public void setOrderId(int orderId) {
         this.orderId = orderId;
     }
 
-    public Long getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public void setAmount(Long amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

@@ -1,17 +1,17 @@
 package com.example.casestudymd3_shopxanh.model;
 
 public class Product {
-    private Long id;
+    private int id;
     private String name;
     private Double price;
     private String description;
     private String image;
-    private Long categoryId;
+    private int categoryId;
 
     public Product() {
     }
 
-    public Product(Long id, String name, Double price, String description, String image, Long categoryId) {
+    public Product(int id, String name, Double price, String description, String image, int categoryId) {
         this.id = id;
         this.name = name;
         this.price = price;
@@ -20,11 +20,11 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -60,11 +60,11 @@ public class Product {
         this.image = image;
     }
 
-    public Long getCategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(Long categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 }

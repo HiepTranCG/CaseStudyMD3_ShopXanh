@@ -3,40 +3,40 @@ package com.example.casestudymd3_shopxanh.model;
 import java.util.Date;
 
 public class Orderr {
-    private Long id;
-    private Long accountId;
+    private int id;
+    private int accountId;
     private Date createDate;
     private int status;
 
     public Orderr() {
     }
 
-    public Orderr(Long accountId, Date createDate, int status) {
+    public Orderr(int accountId, Date createDate, int status) {
         this.accountId = accountId;
         this.createDate = createDate;
         this.status = status;
     }
 
-    public Orderr(Long id, Long accountId, Date createDate, int status) {
+    public Orderr(int id, int accountId, Date createDate, int status) {
         this.id = id;
         this.accountId = accountId;
         this.createDate = createDate;
         this.status = status;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getAccountId() {
+    public int getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(Long accountId) {
+    public void setAccountId(int accountId) {
         this.accountId = accountId;
     }
 

@@ -1,7 +1,7 @@
 package com.example.casestudymd3_shopxanh.model;
 
 public class Account {
-    private Long id;
+    private int id;
     private String username;
     private String password;
     private String name;
@@ -12,7 +12,7 @@ public class Account {
     public Account() {
     }
 
-    public Account(Long id, String username, String password, String name, String phone, String email, int role) {
+    public Account(int id, String username, String password, String name, String phone, String email, int role) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -39,11 +39,11 @@ public class Account {
         this.role = role;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -30,7 +30,7 @@ public class RoleServiceImpl implements IRoleService {
     }
 
     @Override
-    public Role findById(Long id) throws SQLException {
+    public Role findById(int id) throws SQLException {
         return null;
     }
 
@@ -45,7 +45,7 @@ public class RoleServiceImpl implements IRoleService {
     }
 
     @Override
-    public boolean delete(Long id) throws SQLException {
+    public boolean delete(int id) throws SQLException {
         return false;
     }
 

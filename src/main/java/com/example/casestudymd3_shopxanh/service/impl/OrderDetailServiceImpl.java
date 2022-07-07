@@ -28,9 +28,9 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
     public void add(OrderDetail orderDetail) throws SQLException {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("insert into orderdetail(productId, orderId, amount, price) values(?, ?, ?, ?)");) {
-            preparedStatement.setLong(1, orderDetail.getProductId());
-            preparedStatement.setLong(2, orderDetail.getOrderId());
-            preparedStatement.setLong(3, orderDetail.getAmount());
+            preparedStatement.setInt(1, orderDetail.getProductId());
+            preparedStatement.setInt(2, orderDetail.getOrderId());
+            preparedStatement.setInt(3, orderDetail.getAmount());
             preparedStatement.setDouble(4, orderDetail.getPrice());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
@@ -40,17 +40,17 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
     }
 
     @Override
-    public OrderDetail findById(Long id) throws SQLException {
+    public OrderDetail findById(int id) throws SQLException {
         OrderDetail orderDetail = null ;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("select * from orderdetail where id = ?");){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
-                Long productId = rs.getLong("productId");
-                Long orderId = rs.getLong("orderId");
-                Long amount = rs.getLong("amount");
+                int idFind = rs.getInt("id");
+                int productId = rs.getInt("productId");
+                int orderId = rs.getInt("orderId");
+                int amount = rs.getInt("amount");
                 Double price = rs.getDouble("price");
                 orderDetail = new OrderDetail(idFind, productId,orderId, amount, price);
             }
@@ -68,10 +68,10 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
              PreparedStatement preparedStatement = connection.prepareStatement("select * from orderdetail");) {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
-                Long productId = rs.getLong("productId");
-                Long orderId = rs.getLong("orderId");
-                Long amount = rs.getLong("amount");
+                int idFind = rs.getInt("id");
+                int productId = rs.getInt("productId");
+                int orderId = rs.getInt("orderId");
+                int amount = rs.getInt("amount");
                 Double price = rs.getDouble("price");
                 orderDetailList.add(new OrderDetail(idFind, productId,orderId, amount, price));
             }
@@ -88,10 +88,10 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
             preparedStatement.setString(1, "%" + findName + "%");
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                Long idFind = rs.getLong("id");
-                Long productId = rs.getLong("productId");
-                Long orderId = rs.getLong("orderId");
-                Long amount = rs.getLong("amount");
+                int idFind = rs.getInt("id");
+                int productId = rs.getInt("productId");
+                int orderId = rs.getInt("orderId");
+                int amount = rs.getInt("amount");
                 Double price = rs.getDouble("price");
                 orderDetailList.add(new OrderDetail(idFind, productId,orderId, amount, price));
             }
@@ -101,10 +101,10 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
     }
 
     @Override
-    public boolean delete(Long id) throws SQLException {
+    public boolean delete(int id) throws SQLException {
         boolean rowDeleted;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("delete from orderdetail where id = ?")){
-            preparedStatement.setLong(1, id);
+            preparedStatement.setInt(1, id);
             rowDeleted = preparedStatement.executeUpdate() > 0;
         }
         return rowDeleted;
@@ -112,12 +112,12 @@ public class OrderDetailServiceImpl implements IOrderDetailService {
 
     @Override
     public boolean update(OrderDetail orderDetail) throws SQLException {
-        Long findId = orderDetail.getId();
+        int findId = orderDetail.getId();
         boolean rowUpdate;
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement("update orderdetail set orderdetail.productId = ?, orderdetail.orderId = ?, orderdetail.amount = ?, orderdetail.price = ? where id = ?")){
-            preparedStatement.setLong(1, orderDetail.getProductId());
-            preparedStatement.setLong(2, orderDetail.getOrderId());
-            preparedStatement.setLong(3, orderDetail.getAmount());
+            preparedStatement.setInt(1, orderDetail.getProductId());
+            preparedStatement.setInt(2, orderDetail.getOrderId());
+            preparedStatement.setInt(3, orderDetail.getAmount());
             preparedStatement.setDouble(4, orderDetail.getPrice());
             preparedStatement.setDouble(5, findId);
             rowUpdate = preparedStatement.executeUpdate() > 0;
