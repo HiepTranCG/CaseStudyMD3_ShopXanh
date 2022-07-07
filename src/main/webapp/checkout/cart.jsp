@@ -138,7 +138,11 @@
                                 <button class="btn btn-secondary btn-sm px-4">Apply</button>
                             </div>
                         </div>
-                        <a href="checkout.jsp" class="btn btn-dark w-100 text-center" role="button">Proceed to checkout</a>                    </div>
+                        <form method="get" action="/checkouts">
+                            <input type="hidden" name="action" value="checkout">
+                            <button class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow">Add To Shopping Bag</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

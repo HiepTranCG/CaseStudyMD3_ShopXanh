@@ -565,8 +565,10 @@
                                     </picture>
                                 </div>
                             </div>
-                            <button class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow">Add To Shopping Bag</button>
-                        
+                            <form method="get" action="/checkouts">
+                                <input type="hidden" name="action" value="cart">
+                                <button class="btn btn-dark w-100 mt-4 mb-0 hover-lift-sm hover-boxshadow">Add To Shopping Bag</button>
+                            </form>
                             <!-- Product Highlights-->
                                 <div class="my-5">
                                     <div class="row">

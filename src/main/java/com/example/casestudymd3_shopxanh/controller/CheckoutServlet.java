@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "CheckoutServlet", value = "/checkout")
+@WebServlet(name = "CheckoutServlet", value = "/checkouts")
 public class CheckoutServlet extends HttpServlet {
     IProductService productService = new ProductServiceImpl();
     ICategoryService categoryService = new CategoryServiceImpl();
@@ -30,30 +30,37 @@ public class CheckoutServlet extends HttpServlet {
             action = "";
         }
         switch (action) {
-            case "search":
-                searchCategory(request, response);
-                break;
-            default:
-                showListCategory(request, response);
+            case "cart":
+                showCart(request, response);
+            case "checkout":
+                showCheckout(request, response);
+            case "checkout-shipping":
+                showShipping(request, response);
+            case "checkout-payment":
+                showPayment(request, response);
         }
     }
-    private void searchCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("category/category.jsp");
-        String name = request.getParameter("name");
-        List<Product> products = productService.findByName(name);
-        request.setAttribute("products", products);
+
+    private void showCart(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("checkout/cart.jsp");
         requestDispatcher.forward(request, response);
     }
 
-    private void showListCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int categoryId = Integer.parseInt(request.getParameter("id"));
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("category/category.jsp");
-        List<Product> products = productService.findByCategoryId(categoryId);
-        Category category = categoryService.getCategory(categoryId);
-        request.setAttribute("products", products);
-        request.setAttribute("category", category);
+    private void showCheckout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("checkout/checkout.jsp");
         requestDispatcher.forward(request, response);
     }
+
+    private void showShipping(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("checkout/checkout-payment.jsp");
+        requestDispatcher.forward(request, response);
+    }
+
+    private void showPayment(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("checkout/checkout-shipping.jsp");
+        requestDispatcher.forward(request, response);
+    }
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
