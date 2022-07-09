@@ -1,8 +1,6 @@
 package com.example.casestudymd3_shopxanh.controller;
 
 
-import com.example.casestudymd3_shopxanh.model.Category;
-import com.example.casestudymd3_shopxanh.model.Product;
 import com.example.casestudymd3_shopxanh.service.ICategoryService;
 import com.example.casestudymd3_shopxanh.service.IProductService;
 import com.example.casestudymd3_shopxanh.service.impl.CategoryServiceImpl;
