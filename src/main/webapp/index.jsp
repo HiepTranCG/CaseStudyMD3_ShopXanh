@@ -100,9 +100,16 @@
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
-                            <a class="nav-link text-body" href="/logins">
-                                Account
-                            </a>
+                            <c:if test="${name==null}">
+                                <a class="nav-link text-body" href="/logins">
+                                    Login
+                                </a>
+                            </c:if>
+                            <c:if test="${name!=null}">
+                                <a class="nav-link text-body" href="/logins?action=logout">
+                                    Logout
+                                </a>
+                            </c:if>
                         </li>
                         <!-- /Navbar Login-->
     

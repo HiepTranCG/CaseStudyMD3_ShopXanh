@@ -99,9 +99,16 @@
 
                     <!-- Navbar Login-->
                     <li class="ms-1 d-none d-lg-inline-block">
-                        <a class="nav-link text-body" href="../login/login.jsp">
-                            Account
-                        </a>
+                        <c:if test="${name==null}">
+                            <a class="nav-link text-body" href="/logins">
+                                Login
+                            </a>
+                        </c:if>
+                        <c:if test="${name!=null}">
+                            <a class="nav-link text-body" href="/logins?action=logout">
+                                Logout
+                            </a>
+                        </c:if>
                     </li>
                     <!-- /Navbar Login-->
 
@@ -479,7 +486,9 @@
                                 <img class="w-100 img-fluid position-relative z-index-10" title="" src="${product.image}" alt="">
                             </picture>
                             <div class="position-absolute start-0 bottom-0 end-0 z-index-20 p-2">
-                                <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
+                                <c:if test="${name!=null}">
+                                    <button class="btn btn-quick-add"><i class="ri-add-line me-2"></i> Quick Add</button>
+                                </c:if>
                             </div>
                         </div>
                         <div class="card-body px-0">
