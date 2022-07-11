@@ -56,7 +56,7 @@
         <div class="container-fluid">
             <div class="w-100">
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
-    
+
                     <!-- Logo-->
                     <a class="navbar-brand fw-bold fs-3 m-0 p-0 flex-shrink-0 order-0" href="./index.html">
                         <div class="d-flex align-items-center">
@@ -64,10 +64,10 @@
                         </div>
                     </a>
                     <!-- / Logo-->
-    
+
                     <!-- Navbar Icons-->
                     <ul class="list-unstyled mb-0 d-flex align-items-center order-1 order-lg-2 nav-sidelinks">
-    
+
                         <!-- Mobile Nav Toggler-->
                         <li class="d-lg-none">
                             <span class="nav-link text-body d-flex align-items-center cursor-pointer" data-bs-toggle="collapse"
@@ -76,7 +76,6 @@
                         </li>
                         <!-- /Mobile Nav Toggler-->
 
-    
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
                             <c:if test="${name==null}">
@@ -91,25 +90,32 @@
                             </c:if>
                         </li>
                         <!-- /Navbar Login-->
-    
-                        <!-- Navbar Cart Icon-->
+
+                        <c:if test="${roleId==2}">
+                            <li class="ms-1 d-none d-lg-inline-block">
+                                <a class="nav-link text-body" href="/product-managements">
+                                    Management Product
+                                </a>
+                            </li>
+                        </c:if>
+                            <!-- Navbar Cart Icon-->
                         <li class="ms-1 d-inline-block position-relative dropdown-cart">
                             <button class="nav-link me-0 disable-child-pointer border-0 p-0 bg-transparent text-body"
                                 type="button">
                                 Bag (2)
                             </button>
                             <div class="cart-dropdown dropdown-menu">
-                            
+
                                 <!-- Cart Header-->
                                 <div class="d-flex justify-content-between align-items-center border-bottom pt-3 pb-4">
                                     <h6 class="fw-bolder m-0">Cart Summary (2 items)</h6>
                                     <i class="ri-close-circle-line text-muted ri-lg cursor-pointer btn-close-cart"></i>
                                 </div>
                                 <!-- / Cart Header-->
-                            
+
                                 <!-- Cart Items-->
                                 <div>
-                            
+
                                     <!-- Cart Product-->
                                     <div class="row mx-0 py-4 g-0 border-bottom">
                                         <div class="col-2 position-relative">
@@ -148,7 +154,7 @@
                                     </div>
                                 </div>
                                 <!-- /Cart Items-->
-                            
+
                                 <!-- Cart Summary-->
                                 <div>
                                     <div class="pt-3">
@@ -165,18 +171,18 @@
                                 </div>
                                 <!-- / Cart Summary-->
                               </div>
-                            
-    
+
+
                         </li>
                         <!-- /Navbar Cart Icon-->
-    
+
                     </ul>
-                    <!-- Navbar Icons-->                
-    
+                    <!-- Navbar Icons-->
+
                     <!-- Main Navigation-->
                     <div class="flex-shrink-0 collapse navbar-collapse navbar-collapse-light w-auto flex-grow-1 order-2 order-lg-1"
                         id="navbarNavDropdown">
-    
+
                         <!-- Menu-->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown dropdown position-static">
@@ -206,7 +212,7 @@
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->
-                                              
+
                                                   <!-- menu row-->
                                                   <div class="col">
                                                       <h6 class="dropdown-heading">Insulated</h6>
@@ -223,7 +229,7 @@
                                                       </ul>
                                                   </div>
                                                   <!-- / menu row-->
-                                              
+
                                                   <!-- menu row-->
                                                   <div class="d-none d-xxl-block col">
                                                       <h6 class="dropdown-heading">Footwear</h6>
@@ -239,8 +245,8 @@
                                                           <li class="dropdown-list-item"><a class="dropdown-item dropdown-link-all" href="category/category.jsp">View All</a></li>
                                                       </ul>
                                                   </div>
-                                                  <!-- / menu row-->  
-                                                  
+                                                  <!-- / menu row-->
+
                                                   <!-- menu row-->
                                                   <div class="col">
                                                       <h6 class="dropdown-heading text-danger">Special Offers</h6>
@@ -256,9 +262,9 @@
                                                           <li class="dropdown-list-item"><a class="dropdown-item text-danger dropdown-link-all" href="category/category.jsp">View All</a></li>
                                                       </ul>
                                                   </div>
-                                                  <!-- / menu row-->      
+                                                  <!-- / menu row-->
                                               </div>
-                                              
+
                                               <div class="align-items-center justify-content-between mt-5 d-none d-lg-flex">
                                                   <div class="me-5 f-w-20">
                                                       <a class="d-block" href="category/category.jsp">
@@ -304,7 +310,7 @@
                                                   </div>
                                               </div>                  </div>
                                           <!-- /Menswear Dropdown Menu Links Section-->
-                        
+
                                           <!-- Menswear Dropdown Menu Images Section-->
                                           <div class="col-lg-4 d-none d-lg-block">
                                               <div class="vw-50 border-start h-100 position-absolute"></div>
@@ -391,10 +397,10 @@
                                 </ul>
                               </li>
                           </ul>                    <!-- / Menu-->
-    
+
                     </div>
                     <!-- / Main Navigation-->
-    
+
                 </div>
             </div>
         </div>
