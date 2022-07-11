@@ -79,15 +79,15 @@
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="register-password">Password</label>
-                      <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Enter your password" required pattern="^\w+$">
+                      <input type="password" class="form-control" id="register-password" name="register-password" placeholder="Enter your password" required pattern="^[a-zA-Z0-9]{6,8}$">
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="register-name">Name</label>
-                      <input type="text" class="form-control" id="register-name" name="register-name" placeholder="Enter your name">
+                      <input type="text" class="form-control" id="register-name" name="register-name" placeholder="Enter your name" required pattern="^\w+$">
                     </div>
                     <div class="form-group">
                       <label class="form-label" for="register-phone">Phone</label>
-                      <input type="text" class="form-control" id="register-phone" name="register-phone" placeholder="Enter your phone" pattern="^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$" title="Nhập không đúng định dạng">
+                      <input type="text" class="form-control" id="register-phone" name="register-phone" placeholder="Enter your phone" pattern="^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$">
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="register-password">Email</label>

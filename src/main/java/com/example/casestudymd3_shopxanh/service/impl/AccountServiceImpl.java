@@ -30,8 +30,8 @@ public class AccountServiceImpl implements IAccountService {
             preparedStatement.setString(1, account.getUsername());
             preparedStatement.setString(2, account.getPassword());
             preparedStatement.setString(3, account.getName());
-            preparedStatement.setString(4, account.getEmail());
-            preparedStatement.setString(5, account.getPhone());
+            preparedStatement.setString(4, account.getPhone());
+            preparedStatement.setString(5, account.getEmail());
             preparedStatement.setInt(6, account.getRole());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();

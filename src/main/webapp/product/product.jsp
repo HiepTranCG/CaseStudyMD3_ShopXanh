@@ -75,28 +75,7 @@
                                 aria-label="Toggle navigation"><i class="ri-menu-line ri-lg me-1"></i> Menu</span>
                         </li>
                         <!-- /Mobile Nav Toggler-->
-    
-                        <!-- Navbar Search-->
-                        <li class="d-none d-sm-block">
-                            <span class="nav-link text-body search-trigger cursor-pointer">Search</span>
-    
-                            <!-- Search navbar overlay-->
-                            <div class="navbar-search d-none">
-                                <div class="input-group mb-3 h-100">
-                                    <span class="input-group-text px-4 bg-transparent border-0"><i
-                                            class="ri-search-line ri-lg"></i></span>
-                                    <input type="text" class="form-control text-body bg-transparent border-0"
-                                        placeholder="Enter your search terms...">
-                                    <span
-                                        class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"><i
-                                            class="ri-close-circle-line ri-lg"></i></span>
-                                </div>
-                            </div>
-                            <div class="search-overlay"></div>
-                            <!-- / Search navbar overlay-->
-    
-                        </li>
-                        <!-- /Navbar Search-->
+
     
                         <!-- Navbar Login-->
                         <li class="ms-1 d-none d-lg-inline-block">
@@ -431,9 +410,9 @@
             <div class="container-fluid">
                 <nav class="m-0" aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item breadcrumb-light"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item breadcrumb-light"><a href="#">T-Shirts</a></li>
-                      <li class="breadcrumb-item  breadcrumb-light active" aria-current="page">Osaka Japan Mens T-Shirt</li>
+                      <li class="breadcrumb-item breadcrumb-light"><a href="/">Home</a></li>
+                      <li class="breadcrumb-item breadcrumb-light"><a href="/categories?id=${category.id}">${category.name}</a></li>
+                      <li class="breadcrumb-item  breadcrumb-light active" aria-current="page">${product.name}</li>
                     </ol>
                 </nav>            </div>
         </div>

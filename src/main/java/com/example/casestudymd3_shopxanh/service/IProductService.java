@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IProductService extends IGeneralService<Product> {
     public List<Product> findByCategoryId(int categoryId);
+    public List<Product> findByNameAndCategory(String findName, int categoryId);
 }

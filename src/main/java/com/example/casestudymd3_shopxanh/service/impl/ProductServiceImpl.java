@@ -95,7 +95,7 @@ public class ProductServiceImpl implements IProductService {
                 Double price = rs.getDouble("price");
                 String description = rs.getString("description");
                 String image = rs.getString("image");
-                int category = rs.getInt("category");
+                int category = rs.getInt("categoryId");
                 productList.add(new Product(idFind, name, price, description, image, category));
             }
         } catch (SQLException e) {
@@ -135,6 +135,28 @@ public class ProductServiceImpl implements IProductService {
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("select * from product where categoryId = ?");) {
             preparedStatement.setInt(1, categoryId);
+            ResultSet rs = preparedStatement.executeQuery();
+            while (rs.next()) {
+                int idFind = rs.getInt("id");
+                String name = rs.getString("name");
+                Double price = rs.getDouble("price");
+                String description = rs.getString("description");
+                String image = rs.getString("image");
+                int category = rs.getInt("categoryId");
+                productList.add(new Product(idFind, name, price, description, image, category));
+            }
+        } catch (SQLException e) {
+        }
+        return productList;
+    }
+
+    @Override
+    public List<Product> findByNameAndCategory(String findName, int categoryId) {
+        List<Product> productList = new ArrayList<>();
+        try (Connection connection = getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement("select * from product where name like ? and categoryId = ?");) {
+            preparedStatement.setString(1, "%" + findName + "%");
+            preparedStatement.setInt(2, categoryId);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 int idFind = rs.getInt("id");

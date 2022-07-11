@@ -1,8 +1,11 @@
 package com.example.casestudymd3_shopxanh.controller;
 
 
+import com.example.casestudymd3_shopxanh.model.Category;
 import com.example.casestudymd3_shopxanh.model.Product;
+import com.example.casestudymd3_shopxanh.service.ICategoryService;
 import com.example.casestudymd3_shopxanh.service.IProductService;
+import com.example.casestudymd3_shopxanh.service.impl.CategoryServiceImpl;
 import com.example.casestudymd3_shopxanh.service.impl.ProductServiceImpl;
 
 import javax.servlet.RequestDispatcher;
@@ -18,7 +21,7 @@ import java.util.List;
 @WebServlet(name = "ProductServlet", value = "/products")
 public class ProductServlet extends HttpServlet {
     IProductService productService = new ProductServiceImpl();
-
+    ICategoryService categoryService = new CategoryServiceImpl();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -33,7 +36,7 @@ public class ProductServlet extends HttpServlet {
                 break;
             default:
                 try {
-                    showListProduct(request, response);
+                    showProduct(request, response);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
@@ -47,12 +50,14 @@ public class ProductServlet extends HttpServlet {
         requestDispatcher.forward(request, response);
     }
 
-    private void showListProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+    private void showProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("product/product.jsp");
         int id = Integer.parseInt(request.getParameter("id"));
         Product product = productService.findById(id);
+        Category category = categoryService.getCategory(product.getCategoryId());
         List<Product> productList = productService.findAll();
         request.setAttribute("product", product);
+        request.setAttribute("category", category);
         request.setAttribute("productList", productList);
         requestDispatcher.forward(request, response);
     }

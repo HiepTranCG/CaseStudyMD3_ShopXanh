@@ -81,15 +81,19 @@
 
                         <!-- Search navbar overlay-->
                         <div class="navbar-search d-none">
-                            <div class="input-group mb-3 h-100">
+                            <form action="" method="get">
+                                <input type="hidden" name="action" value="search">
+                                <div class="input-group mb-3 h-100">
                                     <span class="input-group-text px-4 bg-transparent border-0"><i
                                             class="ri-search-line ri-lg"></i></span>
-                                <input type="text" class="form-control text-body bg-transparent border-0"
-                                       placeholder="Enter your search terms...">
-                                <span
-                                        class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"><i
-                                        class="ri-close-circle-line ri-lg"></i></span>
-                            </div>
+                                    <input type="hidden" name="categoryId" value="${category.id}">
+                                    <input type="text" class="form-control text-body bg-transparent border-0"
+                                           placeholder="Enter your search terms..." id="searchName" name="searchName">
+                                    <span
+                                            class="input-group-text px-4 cursor-pointer disable-child-pointer close-search bg-transparent border-0"><i
+                                            class="ri-close-circle-line ri-lg"></i></span>
+                                </div>
+                            </form>
                         </div>
                         <div class="search-overlay"></div>
                         <!-- / Search navbar overlay-->
@@ -446,7 +450,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">${category.name}</a></li>
+                        <li class="breadcrumb-item"><a href="/categories?id=${category.id}">${category.name}</a></li>
                         <li class="breadcrumb-item active" aria-current="page">New Releases</li>
                     </ol>
                 </nav>        <h1 class="fw-bold fs-3 mb-2">New Releases (${products.size()})</h1>

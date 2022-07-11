@@ -39,8 +39,11 @@ public class CategoryServlet extends HttpServlet {
     }
     private void searchCategory(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("category/category.jsp");
-        String name = request.getParameter("name");
-        List<Product> products = productService.findByName(name);
+        String name = request.getParameter("searchName");
+        int categoryId = Integer.parseInt(request.getParameter("categoryId"));
+        Category category = categoryService.getCategory(categoryId);
+        List<Product> products = productService.findByNameAndCategory(name, categoryId);
+        request.setAttribute("category", category);
         request.setAttribute("products", products);
         requestDispatcher.forward(request, response);
     }
