@@ -498,7 +498,7 @@
                         <div class="card-body px-0">
                             <a class="text-decoration-none link-cover" href="/products?id=${product.id}">${product.name}</a>
                             <small class="text-muted d-block">${product.description}</small>
-                            <p class="mt-2 mb-0 small"><s class="text-muted">$329.99</s> <span class="text-danger">${product.price}</span></p>
+                            <p class="mt-2 mb-0 small"> <span class="text-danger"></span></p>
                         </div>
                     </div>
                     <!--/ Card Product-->

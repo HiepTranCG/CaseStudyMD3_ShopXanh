@@ -30,6 +30,9 @@ public class CategoryServlet extends HttpServlet {
             action = "";
         }
         switch (action) {
+            case "showAll":
+                showAllProduct(request, response);
+                break;
             case "search":
                 searchCategory(request, response);
                 break;
@@ -44,6 +47,13 @@ public class CategoryServlet extends HttpServlet {
         Category category = categoryService.getCategory(categoryId);
         List<Product> products = productService.findByNameAndCategory(name, categoryId);
         request.setAttribute("category", category);
+        request.setAttribute("products", products);
+        requestDispatcher.forward(request, response);
+    }
+
+    private void showAllProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("category/category.jsp");
+        List<Product> products = productService.findAll();
         request.setAttribute("products", products);
         requestDispatcher.forward(request, response);
     }

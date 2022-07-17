@@ -186,6 +186,11 @@
                         <!-- Menu-->
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown dropdown position-static">
+                                <a class="nav-link dropdown-toggle" href="/categories?action=showAll" role="button" aria-expanded="false">
+                                    All Product
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown position-static">
                               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Men
                               </a>

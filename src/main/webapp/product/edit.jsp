@@ -69,7 +69,7 @@
         </a>
         <!-- / Logo-->
         <div class="shadow-xl p-4 p-lg-5 bg-white">
-            <form action="/product-managements" method="post">
+            <form action="" method="post">
                 <table>
                     <tr>
                         <td><label class="form-label">Name:</label></td>
